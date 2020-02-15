@@ -1,0 +1,84 @@
+/*Box Sizing set for all the elements*/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+
+/*Formatting and spacing the Header*/
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+/*To set the 3 parent div boxes adjacent to each other*/
+div {
+  height: auto;
+  width: 33.33%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+
+/*Setting a div inside each div box, to get spacing and outline*/
+.item {
+  border: 2px solid black;
+  width: 90%;
+  margin-left: 20px;
+  position: relative;
+  background: #A9A9A9;
+}
+
+
+/*Top right title of each div section*/
+.title {
+  border: 2px solid black;
+  width: 25%;
+  margin: 0;
+  float: right;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#chicken {
+ background: #FFB6C1;
+}
+
+#beef {
+ background: #FFA07A;
+}
+
+#sushi {
+ background: #FFE0BD;
+}
+
+
+/*Description text inside each, spaced div box*/
+.text {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/*Responsive Behavior*/
+@media (max-width: 767px){
+.col-sm-1 {
+ width: 100%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.col-md-2 {
+ width: 50%;
+}
+.col-lg-1 {
+ width: 100%;
+}
+
+#item3 {
+ width: 95%;
+}
+}
