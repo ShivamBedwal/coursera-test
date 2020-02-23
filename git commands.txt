@@ -1,0 +1,10 @@
+git status
+git checkout 'gh-pages'
+mkdir site
+cd site
+cd ..
+git status
+git add .
+git commit -m "My First Page"
+git status
+git push
